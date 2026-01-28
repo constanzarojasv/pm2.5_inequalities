@@ -80,8 +80,8 @@ procesar_mp25 <- function(nombre_comuna, nombre_archivo) {
   # 3. Process dates and averages
   df %>%
     mutate(
-      fecha_hora = as.POSIXct(paste(fecha_yymmdd, hora_hhmm), format = "%y%m%d %H%M", tz = "UTC"),
-      fecha_local = as.Date(with_tz(fecha_hora, "America/Santiago")),
+      fecha_hora = as.POSIXct(paste(fecha_yymmdd, hora_hhmm), format = "%y%m%d %H%M", tz = "America/Santiago"),
+      fecha_local = as.Date(fecha_hora),
       mp25_val = valor_detectado
     ) %>%
     group_by(fecha_local) %>%
