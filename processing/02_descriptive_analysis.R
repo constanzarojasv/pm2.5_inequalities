@@ -62,6 +62,6 @@ tabla_invierno <- df_analisis %>%
   filter(es_invierno == "Winter") %>%
   calcular_tabla_resumen("TABLE 2: WINTER STATISTICS")
 
-# 4. Save tables .rds
-write_rds(tabla_anual, "output/tables/table_1_anual.rds")
-write_rds(tabla_invierno, "output/tables/table_2_winter.rds")
+#4. Save tables as .md
+writeLines(kable(tabla_anual, format = "markdown"), "output/tables/table_1_anual.md")
+writeLines(kable(tabla_invierno, format = "markdown"), "output/tables/table_2_winter.md")

@@ -23,3 +23,8 @@ Repositorio de estudio de PM2.5 en comunas de Santiago, Chile
 NULL
 
 *Proyecto ejecutado en: R version 4.5.2 (2025-10-31 ucrt)*
+
+
+
+Falta:
+- Agregar figura sin informacion de pm2.5 con las comunas, estaciones de monitoreo y rosa de los vientos (suplementario)

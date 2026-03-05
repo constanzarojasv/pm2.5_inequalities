@@ -17,7 +17,11 @@
 #   "lme4", 
 #   "lmerTest", 
 #   "ggrepel",
-#   "performance"
+#   "performance",
+#   "knitr",
+#   "broom.mixed",
+#   "performance",
+#   "tibble"
 # ))
 
 # 1. LOAD LIBRARIES 
@@ -34,6 +38,11 @@ library(shadowtext)
 library(lme4)         
 library(lmerTest)     
 library(ggrepel)
+library(knitr)
+library(broom.mixed)
+library(performance)
+library(tibble)
+
 
 #2. COLOR SETUP
 aqi_cols <- c("#00E400","#FFFF00","#FF7E00","#FF0000","#8F3F97","#7E0023")
