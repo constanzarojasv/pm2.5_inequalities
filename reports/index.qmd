@@ -11,6 +11,7 @@ editor: visual
 The following tables summarize the availability of valid data and average PM2.5 concentrations per municipality.
 
 ### 2.1 Annual Statistics
+
 Overview of the entire study period (2022-2024).
 
 ```{r}
